@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(90deg, #216a94,#7edad5);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#video-header{
+    width: 100%;
+    height: 50vh;
+    background: url(../images/bg-video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#play{
+    font-size: 5em;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    color:#fff;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.2s;
+}
+
+#play:hover{
+    text-shadow: 5px 5px 50px #000;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000086;
+}
+
+.modal-contenido{
+    background: rgba(194, 194, 194, 0.301);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 5% auto;
+    padding: 10px;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.close{
+    align-self: flex-end;
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover{
+    transition: all 0.2s;
+    color: rgb(46, 46, 46);
+}
+
+h1{
+    font-size: 1.5em;
+    line-height: 35px;
+    margin: 10px 0px;
+}
+
+p{
+    font-size: 1em;
+    line-height: 25px;
+}
+
+@media screen and (min-width:1024px){
+    .container{
+        flex-direction: row;
+        margin: 0 auto;
+        width: 90%;
+    }
+    #video-header{
+        width: 30vw;
+        height: 60vh;
+    }
+    section{
+        width: 70vw;
+        margin-left: 50px;
+    }
+}

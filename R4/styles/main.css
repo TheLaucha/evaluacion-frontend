@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    background-color: #233e8b;
+    text-align: center;
+    padding: 20px;
+}
+
+#formulario label{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#formulario #ciudad{
+    font-size: 1em;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#formulario #buscar{
+    padding: 10px 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #000;
+    outline: none;
+    background-color: #f1f1f1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#formulario #buscar:hover{
+    cursor: pointer;
+    background-color: #fbf5bb;
+}
+
+table{
+    width: 100%;
+}
+
+table,th,td{
+    text-align: justify;
+    padding: 10px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+tr:nth-child(even){
+    background-color: #fff;
+}
+
+/* ESTILOS DE CIUDADES */
+
+#icono{
+    width: 40px;
+    margin-left: 20px;
+}
